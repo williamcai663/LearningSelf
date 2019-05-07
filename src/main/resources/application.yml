@@ -1,0 +1,19 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root@123
+    redis:
+      sentinel:
+        master: mymaster
+        nodes: 47.106.38.101:26379,47.106.38.101:26380
+        pool:
+          max-idle: 8
+          min-idle: 0
+          max-active: 8
+          max-wait: -1
+server:
+  port: 80
+
