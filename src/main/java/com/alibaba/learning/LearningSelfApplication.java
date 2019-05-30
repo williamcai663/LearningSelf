@@ -11,6 +11,6 @@ public class LearningSelfApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(LearningSelfApplication.class, args);
-
+        "chhc".contains(String.valueOf("cha".charAt(1)));
     }
 }
